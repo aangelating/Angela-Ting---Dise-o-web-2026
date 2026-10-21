@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+
+    font-family:sans-serif;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/*A*/
+
+.a {
+    padding: 48px 0;
+    background-color: #F3BAFD0D;
+}
+
+.a__block {
+    display: flex;
+    padding: 16px;
+    gap: 48px;
+    align-items: center;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.a__image{
+    width: 100%;
+}
+
+.a__content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;  
+}
+
+
+/*Para poner comentarios*/
