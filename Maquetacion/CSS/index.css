@@ -15,11 +15,12 @@ img {
 
 .a {
     padding: 48px 0;
-    background-color: #F3BAFD0D;
+    background-color: #FBFBFB;
 }
 
 .a__block {
     display: flex;
+    flex-wrap: wrap;
     padding: 16px;
     gap: 48px;
     align-items: center;
@@ -28,15 +29,98 @@ img {
 }
 
 .a__image{
-    width: 100%;
+    flex-grow: 1 1 300px;
 }
 
 .a__content{
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 100%;  
+    padding: 16px;
+    flex: 1 1 300px;
 }
+
+/*B*/
+
+/*seccion, es lo rosa*/
+.b {
+    padding: 48px 0px;
+    background-color: #fbfbfb;
+}
+
+.b_block {
+    display: flex; /** por defecto es row**/
+    padding: 16px;
+    gap: 16px; /** espacio entre los hijos**/
+    max-width: 920px;
+    flex-wrap: wrap;
+    margin: 0 auto; /** para centrar el contenido, genera un margen automatico**/
+}
+
+.b_card {
+    display: flex; /** por defecto es row**/
+    flex-direction: column; /** para cambiar la dirección del por defecto del display:flex;**/
+    padding: 16px;
+    gap: 16px; /** espacio entre los elementos de los hijos**/
+    flex: 1 1 180px; /** para que cuando no quepan se reorganicen y que no pasen de una medida determinada**/
+    background-color: #FFFFFF;
+}
+
+h3 {
+    font-size:19px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/*C*/
+
+.c {
+    padding: 48px;
+    background-color: #FBFBFB;
+}
+
+.c__block {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    max-width: 920px;
+    gap: 32px;
+    margin: 0 auto;
+
+}
+
+.c__cards {
+    display: flex;
+    padding: 16px 0;
+    gap: 16px;
+    flex-wrap: wrap; /**el que tiene elementos en row**/
+
+
+}
+
+.c__card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    flex: 1 1 300px;
+  
+
+}
+
+h3 {
+    font-size: 19px;
+}
+
+.btn {
+    background-color: #000000;
+
+}
+
 
 
 /*Para poner comentarios*/
