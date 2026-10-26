@@ -1,4 +1,4 @@
-* {
+* { /**ponerlo**/
     /** se pone padding y margin en 0 para resetear y que segun el navegador, los elementos no se modifiquen. Se pone box-sizing: border-box; para que el padding y el margin no se sumen entre ellos**/
     padding: 0;
     margin: 0; 
@@ -6,17 +6,20 @@
     font-family:sans-serif;
 }
 
-img {
+img { /**ponerlo**/
 /**Esto hace afecte a todas y hace que se adapten al ancho de donde estén colocados. Esto se usa en diseño responsive: cuando la pantalla es pequeña**/
     width: 100%; /**Hace que ocupe todo el ancho de su contenedor**/
     max-width: 100%; /** Es el tope, la imagen no pasará de eso. Esta es la que se usa con más frecuencia. **/
 }
 
+a { /**ponerlo**/
+    text-decoration: none;
+    color: inherit; /**para quitar el color azul que viene por defecto**/
+}
+
 /*A*/
 
 .a {
-    display: flex;
-    gap: 10px;
     padding: 48px 0;
     background-color: #FBFBFB;
 }
@@ -32,7 +35,7 @@ img {
 }
 
 .a__image{
-    flex-grow: 1 1 300px;
+    flex: 1 1 300px;
 }
 
 .a__content{
@@ -41,6 +44,16 @@ img {
     gap: 16px;
     padding: 16px;
     flex: 1 1 300px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
 }
 
 /*B*/
@@ -65,7 +78,7 @@ img {
     flex-direction: column; /** para cambiar la dirección del por defecto del display:flex;**/
     padding: 16px;
     gap: 16px; /** espacio entre los elementos de los hijos**/
-    flex: 1 1 180px; /** para que cuando no quepan se reorganicen y que no pasen de una medida determinada**/
+    flex: 1 1 200px; /** para que cuando no quepan se reorganicen y que no pasen de una medida determinada**/
     background-color: #FFFFFF;
 }
 
@@ -93,6 +106,7 @@ p {
     max-width: 920px;
     gap: 32px;
     margin: 0 auto;
+    align-items: start; /** por defecto viene strech que es que se estira. Solucion para que no se estire see more o poner en el btn align-self: start; **/
     }
 
 h2 {
@@ -117,7 +131,7 @@ p {
     flex-direction: column;
     padding: 16px;
     gap: 16px;
-    flex: 1 1 300px;
+    flex: 1 1 00px;
 }
 
 h3 {
@@ -127,57 +141,52 @@ h3 {
 
 .btn {
     background-color: #000000;
-    display: flex;
-    width: fit-content;
+    align-self: start; /**por defecto viene strech que es que se estira. Para solucionar se puede poner en el btn o en el c__block align-items: start;**/
     padding: 16px 32px;
-    gap: 10px;
     border-radius: 73px;
     color: #FFFFFF;
-    text-decoration: none;
-    align-items: center;
+    font-size: 15px;
     
 }
 
 /**D**/
 
 .d {
-    display: flex;
-    gap: 10px;
-    padding: 48px;
+    padding: 48px 0;
+    background-color: #fbfbfb;
+    
+   
 }
 
-.d__blocks {
+.d__block {
     display: flex;
     flex-direction: column;
     gap: 32px;
+    
+    
     padding: 16px;
     max-width: 920px;
-    flex: 1 1 200px;
+    margin: 0 auto;
+
 }
 
-.d__block1 {
+.d__head {
     display: flex;
-    max-width: 920px;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between; /**cuando en figma pone auto**/
+    flex-wrap: wrap;
+    
 }
 
 h2 {
     font-size: 32px;
 }
 
-.btn {
+.d__cards {
     display: flex;
-    padding: 16px 32px;
-    font-size: 15px;
-    gap: 10px;
-    border-radius: 73;
-}
-
-.d__blocks2 {
-    display: flex;
-    flex: 1 1 200px;
-    padding: 16px;
+    padding: 16px 0;
     gap: 16px;
+    flex-wrap: wrap;
 
 }
 
@@ -191,34 +200,124 @@ p {
     font-weight: 400;
 }
 
-.d__block2 {
+.d__card {
     display: flex;
     flex-direction: column;
-    flex: 1 1 200px;
     padding: 16px;
     gap: 16px;
+    flex: 1 1 200px;
 
 }
 
-.d__block3 {
+.d__foot {
     display: flex;
-    max-width: 920px;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
     
 }
 
-.p__block3 {
+.link {
     font-size: 19px;
-    font-weight: 400;
-}
-
-a {
-    font-size: 19px;
-    font-weight: 400;
+    font-weight: 600;
     color: #000000;
-    text-decoration: none;
+}
+
+/*Nivel medio*/
+    /*E*/
+
+.e {
+    padding: 48px 0;
+    background-color: #FBFBFB;
+}
+
+.e__block {
+    max-width: 920px;
+    margin: 0 auto;
+    
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 48px;
+    
+}
+
+.e__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+}
+
+.e__texts {
+    display: flex;
+    padding: 16px 0;
+    gap: 16px;
+    flex-wrap: wrap; /**Esto funciona porque esta el fle: 1 1 300px; en el e__text **/
+}
+
+.e__text {
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    flex: 1 1 300px;
+    text-align: justify;
+
+}
+
+/**F**/
+
+.f {
+
+    padding: 48px 0;
+    background-color: #FBFBFB;
+
+}
+
+.f__block {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 48px;
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.f__card1 {
+    display: flex;
+    gap: 16px;
+}
+
+.f__card2 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+}
+
+.f__card2text1 {
+    display: flex;
+    gap: 16px;
+    padding: 16px;
+    text-align: justify;
+    
+} 
+
+.f__text2 {
+    flex: 1 1 200px;
+}
+
+.btn1 {
+    background-color: #000000;
+    align-self: start; /**por defecto viene strech que es que se estira. Para solucionar se puede poner en el btn o en el c__block align-items: start;**/
+    padding: 16px 32px;
+    border-radius: 73px;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: center;
+
+    flex: 1 1 200px;
 }
 
 
-
-/*Para poner comentarios*/
+    
