@@ -433,6 +433,9 @@ p {
 }
 
 .h__foot {
-
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    justify-content: space-between;
 }
 
