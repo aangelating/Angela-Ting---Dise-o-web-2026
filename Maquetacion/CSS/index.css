@@ -283,19 +283,25 @@ p {
     margin: 0 auto;
 }
 
-.f__card1 {
+.f__images {
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
 }
 
-.f__card2 {
+.f__image {
+    flex: 1 1 200px; /**es la suma de flex - basis shrink grow**/
+}
+
+
+.f__content {
     display: flex;
     flex-direction: column;
     gap: 16px;
     padding: 16px 0;
 }
 
-.f__card2text1 {
+.f__row {
     display: flex;
     gap: 16px;
     padding: 16px;
@@ -303,13 +309,13 @@ p {
     
 } 
 
-.f__text2 {
+.f__row_p {
     flex: 1 1 200px;
 }
 
 .btn1 {
     background-color: #000000;
-    align-self: start; /**por defecto viene strech que es que se estira. Para solucionar se puede poner en el btn o en el c__block align-items: start;**/
+    align-self: center; /**por defecto viene strech que es que se estira. Para solucionar se puede poner en el btn o en el c__block align-items: start;**/
     padding: 16px 32px;
     border-radius: 73px;
     color: #FFFFFF;
@@ -319,5 +325,114 @@ p {
     flex: 1 1 200px;
 }
 
+/** G **/
 
-    
+.g {
+    padding: 48px 0;
+    background-color: #FBFBFB;
+}
+
+.g__block {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    max-width: 920px;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.g__cards {
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.g__card {
+    display:flex ;
+    flex-direction: column;
+    padding: 32px;
+    gap: 16px;
+    background-color: #F0F0F0;
+    flex: 1 1 200px;
+}
+
+.g__cardsubtitle {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.symbol {
+    width: 13px;
+}
+
+.g__content {
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+            
+/**H**/
+
+.h {
+    padding:48px 0;
+    background-color: #FBFBFB;
+}
+
+.h__block {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    margin: 0 auto;
+    max-width: 920px;
+}
+
+.h__content {
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+}
+
+.h__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.h__left_image {
+
+}
+
+.h__card {
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F0F0;
+    padding: 32px;
+    gap: 16px;
+}
+
+.h__right {
+     display: flex;
+     flex-direction: column;
+     gap: 16px;
+
+}
+
+.h__card2 {
+    display: flex;
+    padding: 24px;
+    gap: 16px;
+    background-color: #F0F0F0;
+}
+
+.h__card2_text {
+
+}
+
+.h__foot {
+
+}
+
