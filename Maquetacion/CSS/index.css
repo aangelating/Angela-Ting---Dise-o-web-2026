@@ -253,7 +253,7 @@ p {
     display: flex;
     padding: 16px 0;
     gap: 16px;
-    flex-wrap: wrap; /**Esto funciona porque esta el fle: 1 1 300px; en el e__text **/
+    flex-wrap: wrap; /**Esto funciona porque esta el flex: 1 1 300px; en el e__text **/
 }
 
 .e__text {
@@ -383,42 +383,43 @@ p {
 }
 
 .h__block {
+    max-width: 920px;
+    margin: 0 auto; 
+    padding: 16px;
+    
     display: flex;
     flex-direction: column;
-    padding: 16px;
     gap: 16px;
-    margin: 0 auto;
-    max-width: 920px;
 }
 
 .h__content {
     display: flex;
-    padding: 16px;
+    padding: 16px 0; 
     gap: 16px;
+    flex-wrap: wrap;
+    
 }
 
 .h__left {
-    display: flex;
-    flex-direction: column;
-}
-
-.h__left_image {
-
+    flex: 1 1 200px;
+    background-color: #F0F0F0;
 }
 
 .h__card {
     display: flex;
     flex-direction: column;
-    background-color: #F0F0F0;
     padding: 32px;
     gap: 16px;
+    flex: 1 1;
+    
+ 
 }
 
 .h__right {
      display: flex;
      flex-direction: column;
      gap: 16px;
-
+     flex: 1 1 200px;
 }
 
 .h__card2 {
@@ -426,13 +427,20 @@ p {
     padding: 24px;
     gap: 16px;
     background-color: #F0F0F0;
+    align-items: center;
+    flex: 1 1;
 }
 
 .h__card2_text {
-
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .h__foot {
-
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+    justify-content: space-between;
 }
 
