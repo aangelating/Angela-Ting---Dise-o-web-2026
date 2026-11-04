@@ -36,12 +36,15 @@ a {
     color: inherit;
 }
 
+ul {
+    list-style: none;
+}
+
         /**Components**/
 
 h1, h2, h3, p, a, small, span {
     font-family: "Roboto", sans-serif;
-}
-/** la coma hace que se añada la caracteristica en cada etiqueta que se pone**/
+} /** la coma hace que se añada la caracteristica en cada etiqueta que se pone**/
 
 h1 {
     font-size: 56px;
@@ -59,8 +62,6 @@ h3 {
     font-weight: 500;
 }
 
-
-
 p {
     font-size: 15px;
     font-weight: 400;
@@ -76,7 +77,6 @@ p {
      color: var(--color-grey);
      text-transform: uppercase;
      font-weight: 400;
-
 }
 
 .small {
@@ -124,7 +124,6 @@ p {
 .header__block {
     display: flex;
     justify-content: space-between;
-
 }
 
 .header__logo {
@@ -145,12 +144,14 @@ p {
     padding: 64px 24px;
     background-color: var(--color-bg);
 }
+
 .hero__block {
     display: flex;
     flex-direction: column;
     gap: 48px;
 
 }
+
 .hero__content{
     display: flex;
     gap: 48px;
@@ -176,6 +177,7 @@ p {
     color: #606060;
     text-transform: uppercase;
 }
+
 .hero__text_p {
     color: #606060;
 }
@@ -189,6 +191,7 @@ p {
     display: flex;
     gap: var(--space-xl);
 }
+
 .hero__foot{
     display: flex;
     justify-content: space-between;
@@ -220,8 +223,8 @@ p {
     display: flex;
     gap: var(--space-xs);
     flex-wrap: wrap;
-
 }
+
 .section1_second_content{
     display: flex;
     flex-direction: column;
@@ -242,25 +245,25 @@ p {
 .section2 {
     padding: var(--space-xl) var(--space-md);
     background-color: var(--color-bg);
-
 }
+
 .section2__block{
     display: flex;
     flex-direction: column;
     gap: var(--space-lg);
-
 }
+
 .section2__header{
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
 }
+
 .section2_contents{
     display: flex;
     gap:var(--space-lg) ;
 
     flex-wrap: wrap;
-
 }
 
 .section2__content {
@@ -276,17 +279,18 @@ p {
     flex-direction: column;
     gap: var(--space-xxs);
 }
+
 .section2__link{
     display: flex;
     justify-content: space-between;
 }
+
 /*====================================================*/
 /**Section3**/
 
 .section3{
     padding: var(--space-xl) var(--space-md);
     background-color: var(--color-bg);
-
 }
 
 .section3__block{
@@ -300,17 +304,18 @@ p {
     justify-content: space-between;
     align-items: center;
 }
+
 .section3_contents{
     display: flex;
     gap: var(--space-xs);
     flex-wrap: wrap;
 }
+
 .section3_content_l{
     display: flex;
     flex-direction: column;
     background-color: var(--color-light-grey);
     flex: 1 1 200px;
-
 }
 
 .section3_content_l_text{
@@ -346,17 +351,19 @@ p {
     padding: var(--space-xxl) var(--space-md);
     background-color: var(--color-bg);
 }
+
 .trabajos__block{
     display: flex;
     flex-direction: column;
     gap: var(--space-lg);    
 }
+
 .trabajos_grid{
     display: grid;
     grid-template-columns: var(--grid-2col);/* el wrap del grid*/
     gap: var(--space-xs);
-    
 }
+
 .trabajos_card {
      background-color: var(--color-light-grey);
      display: flex;
@@ -388,43 +395,46 @@ p {
     padding: var(--space-xl) var(--space-md);
     background-color: var(--color-bg);
 }
+
 .footer_block{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
+
 .footer_header{
     background-color: var(--color-light-grey);
     display: flex;
     padding: var(--space-xl);
     gap: var(--space-xl);
-    flex: 1 1 300px;
 }
+
 .footer_header_l{
     display: flex;
     flex-direction: column;
     gap: var(--space-xs);
 }
+
 .footer_header_r{
     display: flex;
     flex-direction: column;
     gap: var(--space-md) ;
-
-    justify-content: center;
     align-items: center;
 }
+
 .footer_foot{
     display: flex;
     flex-direction: column;
-    padding: var(--space-xl) 0 var(--space-lg);
+    padding: var(--space-xl) 0 var(--space-lg) 0;
     gap: var(--space-lg);
     flex: 1 1 300px;
 }
+
 .footer_foot_first {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .footer_foot_first_l{
     display: flex;
     flex-direction: column;
@@ -434,6 +444,7 @@ p {
 .footer_img{
     max-width: 75px;
 }
+
 .footer_foot_first_r {
     display: flex;
     gap:var(--space-lg);
@@ -445,10 +456,12 @@ p {
     padding-top: var(--space-md);
     border-top: solid 1px var(--color-border);
 }
+
 .footer_foot_second_r{
     display: flex;
     gap: var(--space-md);
 }
+
 .footer_text_medium{
     font-size: 15px;
     color: var(--color-grey);
